@@ -1,0 +1,10 @@
+{
+    "name" : "Coders Celender",
+    "version" : "0.0.1",
+    "description" : "Celender Demo",
+    "manifest_version" : 2,
+    "browser_action" : {
+        "default_popup" : "index.html",
+        "default_icon" : "images/icon.png"
+    }
+}

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    width: 780px;
+    height: 580px;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #2c2c54;
+}
+.sidebar{
+    position: relative;
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    left: 0px;
+    z-index: 10;
+    transition: .5s;
+    overflow-y: auto;
+    overflow-x:hidden ;
+}
+.contest-list{
+    max-width: 72%;
+    margin-left: 4%;
+    position: relative;
+    left: 255px;
+    z-index: 5;
+}
+.sidebar ul li:first-child{
+    border: none;
+}
+.sidebar ul li:last-child{
+    border-bottom: 1px solid white;
+}
+.sidebar ul li{
+    border-top: 1px solid white;
+    cursor: pointer;
+}
+.sidebar ul li:hover{
+    background-color: white;
+}
+.sidebar ul li p{
+    padding-top: 5%;
+    height: 100%;
+}
+.no-hover{
+    background-color: #2c3e50 !important;
+}
+.sidebar ul li :hover p{
+    color: #2c3e50 !important;
+    font-weight: bold;
+}
+.active-sidebar{
+    left: 0px !important;
+}
+.active-icn{
+    left: 255px !important;
+    transform: rotatey(180deg);
+}
+.active{
+    background-color: white;
+    color: #2c3e50 !important;
+    font-weight: bold;
+}
+.active p{
+    color: #2c3e50 !important;
+    font-weight: bolder;
+}
+.navigation{
+    font-size: 40px;
+    position: relative;
+    position: fixed ;
+    top:5px;
+    left: 5px;
+    transition: .5s;
+    cursor: pointer;
+    display: none;
+}
+.a-contest{
+    height: 110px;
+}
+.a-contest img{
+    max-width: 80px;
+    max-height: 80px;
+    height: 100%;
+    width: 100%;
+}
+
+/* own creation */
+.bg_ex2{
+    background-color: #2c3e50;
+}
+.text-1{
+    color: #2c3e50;
+}
+
+/* Media Query */
+
+@media (max-width:1200px) {
+    .contest-list{
+        margin-left: 2%;
+    }
+}
+@media (max-width:900px) {
+    .sidebar{
+        position: fixed !important;
+        left: -250px;
+    }
+    .navigation{
+        display: block !important;
+        position: fixed !important;
+    }
+    .contest-list{
+        position: relative !important;
+        left: 0px !important;
+        margin: auto;
+        max-width: 95%;
+    }
+}

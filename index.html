@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Contest Calender</title>
+</head>
+
+<body>
+    <div class="sidebar bg_ex2">
+        <ul id="api-list">
+            <li class="no-hover">
+                <div class="row">
+                    <div class="col mt-3 text-center text-white font-weight-bolder">
+                        <strong>Contest Menu</strong>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white active" id="api-all">All Sites</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-codeforces" >Codeforces</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-at_coder">AtCoder</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-code_chef">Codechef</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-leet_code">LeetCode</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-top_coder">TopCoder</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-hacker_rank">Hackerrank</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-hacker_earth">Hackerearth</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-cs_academy">CS Academy</p class="text-white">
+                    </div>
+                </div>
+            </li>
+            <li >
+                <div class="row">
+                    <div class="col text-center">
+                        <p class="text-white" id="api-kick_start">Kick Start</p class="text-white">
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="col-12 mt-5 text-center">
+            <a href="" class="text-white"><i class="fab fa-github"></i> GitHub Link</a>
+            <br>
+            <br>
+        </div>
+        <div class="navigation">
+            <i class="icn fa fa-list-alt rounded"></i>
+        </div>
+    </div>
+    <div class="contest-list">
+        <div class="pt-3" id="results">
+            <h4 class="text-light text-uppercase border-bottom border-top border-white py-2 mx-auto text-center"><span
+                    id="contest-origin">All</span> Contests</h4>
+            <hr>
+            <br>
+            <h5 class="text-center mb-3 text-white border-bottom pb-3">Running Contests</h5>
+            <div id="running-contest">
+                <!-- <div class="col-12 px-0 mb-3 a-contest border border-warning d-flex justify-content-between align-items-center rounded">
+                    <div class="col-3 col-lg-2 border-warning text-center border-right"><a href=""><img
+                                src="imgaes/codeforces.png" class="img-fluid" alt=""></a></div>
+                    <div class="col-9 px-1 text-white">
+                        <h5 class="py-0 mb-0 h6"><a href="" class="text-white">Codeforces Round #697 (Div. 3)</a></h5>
+                        <p class="pb-0 mb-0"><small>Duration:</small></p>
+                        <p class="pb-0 mb-0"><small id="startTime"></small></p>
+                        <p class="pt-0 mb-0 mt-0"><small>End: 16 Jan,2021 8:00 PM</small></p>
+                    </div>
+                </div> -->
+            </div>
+            <hr>
+            <br>
+            <h5 class="text-center mb-3 text-white border-bottom pb-3">Upcoming Contests</h5>
+            <div id="upcoming-contest">
+                <!-- <div class="col-12 px-0 mb-2 a-contest border border-warning d-flex flex-wrap justify-content-between align-items-center rounded">
+                    <div class="col-3 col-lg-2 text-center border-warning border-right"><a href=""><img
+                                src="imgaes/kick_start.png" class="img-fluid" alt=""></a></div>
+                    <div class="col-9 px-1 pb-0 text-white">
+                        <h5 class="py-0 mb-0 h6"><a href="" class="text-white">Codeforces Round #697 (Div. 3)</a></h5>
+                        <p class="pb-0 mb-0"><small>Duration:</small></p>
+                        <p class="pb-0 mb-0"><small id="startTime">Start: 16 Jan,2021 8:00 PM</small></p>
+                        <p class="pt-0 mb-0 mt-0"><small>End: 16 Jan,2021 8:00 PM</small></p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
