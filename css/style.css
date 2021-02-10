@@ -6,21 +6,31 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    width: 780px;
-    height: 580px;
+    background-color: #2c2c54;
+    width: 500px;
+    min-height: 600px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
 a:hover{
     text-decoration: none;
 }
 ul{
     list-style: none;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    background-color: #2c2c54;
 }
 .sidebar{
     position: relative;
@@ -84,7 +94,8 @@ body{
     font-size: 40px;
     position: relative;
     position: fixed ;
-    top:5px;
+    top:10px;
+    color: white !important;
     left: 5px;
     transition: .5s;
     cursor: pointer;

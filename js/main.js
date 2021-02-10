@@ -17,11 +17,11 @@ getImage = origin => {
     if (origin == "CS Academy") return "cs_academy";
     if (origin == "HackerEarth") return "hacker_earth";
     if (origin == "LeetCode") return "leet_code";
-
+    else return "codeforces";
 }
 durationInBrief = duration => {
     let hour = parseInt(duration / 3600);
-    let min = parseInt(duration%3600);
+    let min = parseInt((duration-(hour*3600))/60);
     return `${hour} Hours ${min} Minutes`;
 }
 
